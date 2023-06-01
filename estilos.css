@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
+.div12 {
+    color: aliceblue;
+
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.productContainer{
+    width: 20%;
+}
+.divcontenedor {
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+   padding: 4%;
+    margin: 20px;
+    width: 80%;
+    height: 95%;
+}
+.img{
+    border-radius: 7%;
+    padding: 8px;
+}
+.imagenpng{
+    width: 60px;
+}
+.cantidadprod{
+width: 50px;
+}
+
+.divcontenedo{
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+  
+    margin: 20px;
+  
+  
+}
+.buton3{
+    margin: 10px;
+}
+.divclass{
+    background-color: dimgrey;
+    height: 100px;
+}
+.butoneliminar{
+    margin: 5px;
+}
