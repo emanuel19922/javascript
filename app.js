@@ -9,18 +9,19 @@
 const mainContainer = document.querySelector(".mainContainer")
 const asynchronousRequest = async () => {
   const res = await
-    fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=10')
+    fetch('https://fakestoreapi.com/products')
   const parsedInformation = await res.json()
 
 
 
   parsedInformation.forEach((element) => {
+
     const products = document.createElement("div")
     products.className =  "productContainer"     
     products.innerHTML =
       `
         <div class="divcontenedor card style=width: 18rem;"> 
-        <img class="img  card-img-top" src="${element.images[0]}" alt="">
+        <img class="img  card-img-top" src="${element.image}" alt="">
         <h3 class="producto card-title">${element.title}</h3>
         <p>precio:</p>
         <p class="precioproduc card-text"> ${element.price}$</p> 
